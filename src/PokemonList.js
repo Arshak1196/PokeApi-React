@@ -1,9 +1,13 @@
 import React from 'react'
 
-function PokemonList() {
+function PokemonList({pokemon}) {
   return (
     <div>
-        PokemonList
+        {pokemon.map(p=>{
+            return(
+                <div key={p}>{p}</div>
+            )
+        })}
     </div>
   )
 }
